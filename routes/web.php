@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/admin', function () {
+    $nama = "Nama";
+    echo "<h1>Ini Halaman Admin $nama</h1>";
+});
